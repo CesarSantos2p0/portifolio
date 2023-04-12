@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-detaque: #113CFC;
+    --cor-secundaria: #010101;
+    --cor-tercearia: #F6F1F1;
+    --cor-hover: #213E3B;
+
+    --font-primaria:  'Montserrat', sans-serif;
+    --font-secundaria: 'Krona One', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-tercearia);
+}
+
+.cabecario {
+    padding: 2% 0% 0% 28%;
+}
+
+.cabecario__home {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecario__home__link {
+    font-family: var(--font-primaria);
+    font-weight: 600;
+    font-size: 1.62rem;
+    color: var(--cor-detaque);
+    text-decoration: none;
+}
+
+.Destaque {
+    color: var(--cor-detaque);
+}
+
+.apresentacao {
+    padding: 5% 28%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-family: var(--font-secundaria);
+    font-size: 2.25rem;
+}
+
+.apresentacao__conteudo__texto {
+    font-family: var(--font-secundaria);
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+}
+
+.apresentacao__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.apresentacao__buttons__redes {
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__buttons__button {
+    justify-content: center;
+    gap: 16px;
+    display: flex;
+    border: 4px solid var(--cor-detaque);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-tercearia);
+    font-weight: 600;
+    font-family: var(--font-primaria);
+}
+
+/*quando o mause passar por cima*/
+
+.apresentacao__buttons__button:hover {
+    background-color: var(--cor-hover);
+}
+
+.Desenvolvido {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-detaque);
+    text-align: center;
+    padding: 24px;
+    font-family: var(--font-primaria);
+    font-size:  1.5rem;
+    font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+
+    .cabecario {
+        padding: 10%;
+    }
+
+    .cabecario__home {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
