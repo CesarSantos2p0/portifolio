@@ -27,6 +27,10 @@ body {
     width: 50px;
 }
 
+a{
+    color: #113CFC;
+}
+
 .cabecario {
     padding: 2% 0% 0% 28%;
 }
